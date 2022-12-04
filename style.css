@@ -118,7 +118,7 @@ footer{
 
 }
 #nome:focus, #password:focus{
-    outline: 0;
+    outline-color: var(--blue-ocean);
 }
 .esqueceu{
     color: var(--blue-ocean);
