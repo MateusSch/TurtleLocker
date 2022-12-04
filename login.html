@@ -15,15 +15,25 @@
             <h1 class="logo">Turtle<span>Locker</span></h1>
         </nav>
     </header>
-    <main class="mainIndex">
-        <h1 class="texto_home">
-            Guarde seus pertences com <span>segurança</span>
-        </h1>
-        <a href="login.html">
-            <button class="btn">
-                Começar agora
+    <main>
+        <form class="loginForm">
+            <label for="nome">
+                <input id="nome" type="text" placeholder="Nome">
+            </label>
+            <label for="password">
+                <input id="password" type="password" placeholder="Senha">
+            </label>
+            <button class="btn" type="submit">
+                Entrar
             </button>
-        </a>
+            <a href="." class="esqueceu">Esqueceu a senha?</a>
+            <svg class="linha" viewBox="0 0 252 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H251" stroke="black" stroke-opacity="0.2" stroke-linecap="round"/>
+            </svg>
+            <button class="btn green">
+                Criar nova conta
+            </button>
+        </form>
     </main>
     <footer>
         <svg class="waves" viewBox="0 0 1439 613" fill="none" xmlns="http://www.w3.org/2000/svg">

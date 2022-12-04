@@ -7,6 +7,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --blue-ocean: #39B0FF;
+    --green: #39FFA0;
+}
 .container{
     min-width: 100vw;
     min-height: 100vh;
@@ -38,12 +42,15 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3em;
     padding: 0;
     width: 100%;
     height: calc(70vh - 50px);
     top: 0;
     left: 0;
+}
+/*Index*/
+.mainIndex{
+    gap: 3em;
 }
 .texto_home{
     font-family: 'Roboto Slab', serif;
@@ -56,10 +63,10 @@ main{
     width: 50%;
 }
 .texto_home span{
-    color: #39B0FF;
+    color: var(--blue-ocean);
 }
 .btn{
-    background: #39B0FF;
+    background: var(--blue-ocean);
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -69,6 +76,7 @@ main{
     font-style: normal;
     font-weight: 400;
     font-size: 1.5em;
+    cursor: pointer;
 }
 .btn a{
     text-decoration: none;
@@ -86,5 +94,45 @@ footer{
     .waves{
     height: 60vh;
     width: 100%;
+    }
+}
+/*Login*/
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+#nome, #password{
+    background: none;
+    width: 30vw;
+    height: 4em;
+    border: solid var(--blue-ocean) 1px;
+    border-radius: 10px;
+    color: var(--blue-ocean);
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 10px;
+}
+::-ms-reveal {
+    color: var(--blue-ocean);
+
+}
+#nome:focus, #password:focus{
+    outline: 0;
+}
+.esqueceu{
+    color: var(--blue-ocean);
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+.linha{
+    width: 100%;
+}
+.green{
+    background: var(--green);
+}
+@media only screen and (max-width: 768px){
+    #nome, #password{
+        width: 70vw;
     }
 }
