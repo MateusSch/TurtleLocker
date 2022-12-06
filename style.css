@@ -120,7 +120,7 @@ footer{
     align-items: center;
     gap: 1.5em;
 }
-#nome, #password{
+#email, #senha{
     background: none;
     width: 30vw;
     height: 4em;
@@ -130,11 +130,7 @@ footer{
     font-family: 'Roboto', sans-serif;
     padding: 5px 10px;
 }
-::-ms-reveal {
-    color: var(--blue-ocean);
-
-}
-#nome:focus, #password:focus{
+#email:focus, #senha:focus{
     outline-color: var(--blue-ocean);
 }
 .esqueceu{
@@ -149,7 +145,7 @@ footer{
     background: var(--green);
 }
 @media only screen and (max-width: 768px){
-    #nome, #password{
+    #email, #senha{
         width: 70vw;
     }
 }
@@ -172,4 +168,25 @@ footer{
     .textoMap h1{
         font-size: 4em;
     }
+}
+/*Admin*/
+.mainAdmin{
+    height: 100%;
+}
+.textoAdmin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 30vh;
+}
+td{
+    border:1px solid #000;
+    width:1px;
+    white-space:nowrap;
+}
+
+td input {
+    width: 100%;
+    box-sizing: border-box;
 }
